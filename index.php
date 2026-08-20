@@ -51,7 +51,7 @@ include('includes/header.php');
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                     <input type="email" id="email" name="email" class="form-control" />
-                    <label class="form-label" for="email">Email address</label>
+                    <label class="form-label" for="email" autocomplete="email">Email address</label>
                 </div>
 
                 <!-- Password input -->
