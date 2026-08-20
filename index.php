@@ -47,7 +47,7 @@ include('includes/header.php');
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <form method="post">
+            <form method="post" action="index.php">
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                     <input type="email" id="email" name="email" class="form-control" />
@@ -56,8 +56,8 @@ include('includes/header.php');
 
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                    <input type="password" id="password"  name="password" class="form-control" />
-                    <label class="form-label" for="password">Password</label>
+                    <input type="password" id="password"  name="password" class="form-control " />
+                    <label class="form-label" for="password" >Password</label>
                 </div>
 
    
