@@ -5,12 +5,12 @@ include('includes/database.php');
 include('includes/functions.php');
 
 if(isset($_SESSION['id'])){
-    header('Location: cms/dashboard.php');
+    header('Location: dashboard.php');
     die();
 }
+
+
 include('includes/header.php');
-
-
 
 
 
@@ -41,11 +41,9 @@ if (isset($_POST['email'])) {
 
 }
 
-
 ?>
-<div class="container mt-5 justify-content-center ">
-    <div class="row justify-content-center mt-4 text-center">    <h1>LOGIN</h1>
-
+<div class="container mt-5">
+    <div class="row justify-content-center">
         <div class="col-md-6">
             <form method="post">
                 <!-- Email input -->
