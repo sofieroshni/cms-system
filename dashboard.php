@@ -3,7 +3,7 @@
 include('includes/config.php');
 include('includes/database.php');
 include('includes/functions.php');
-// secure();
+secure();
 
 include('includes/header.php');
 
