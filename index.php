@@ -12,7 +12,6 @@ if(isset($_SESSION['id'])){
 
 
 
-
 if (isset($_POST['email'])) {
     if ($stm = $connect->prepare('SELECT * FROM users WHERE email = ? AND password = ? AND active = 1')){
         $hashed = SHA1($_POST['password']);

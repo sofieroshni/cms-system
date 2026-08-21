@@ -3,7 +3,6 @@
 include('includes/config.php');
 include('includes/database.php');
 include('includes/functions.php');
-secure();
 
 include('includes/header.php');
 
@@ -16,6 +15,7 @@ include('includes/header.php');
 
             <a href="users.php">Users management </a> | 
             <a href="posts.php">Posts management </a>
+            <a href="pages.php">Pages</a>
         </div>
 
     </div>
