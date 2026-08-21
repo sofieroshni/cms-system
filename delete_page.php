@@ -13,7 +13,7 @@ if (!$id) {
     exit;
 }
 
-$stmt = $connection->prepare("DELETE FROM pages WHERE id = ?");
+$stmt = $connect->prepare("DELETE FROM pages WHERE id = ?");
 $stmt->bind_param('i', $id);
 
 if ($stmt->execute()) {

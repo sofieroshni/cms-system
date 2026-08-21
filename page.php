@@ -5,7 +5,7 @@ include('includes/functions.php');
 
 $slug = $_GET['slug'] ?? '';
 
-$stmt = $connection->prepare("SELECT title, content FROM pages WHERE slug = ? AND status = 'published'");
+$stmt = $connect->prepare("SELECT title, content FROM pages WHERE slug = ? AND status = 'published'");
 $stmt->bind_param('s', $slug);
 $stmt->execute();
 $result = $stmt->get_result();

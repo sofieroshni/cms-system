@@ -19,7 +19,7 @@ $slug = strtolower(trim(preg_replace('/[^a-z0-9]+/i', '-', $title), '-'));
 
 if ($id) {
     // OPDATER eksisterende side
-    $stmt = $connection->prepare("UPDATE pages SET title = ?, content = ? WHERE id = ?");
+    $stmt = $connect->prepare("UPDATE pages SET title = ?, content = ? WHERE id = ?");
     $stmt->bind_param('ssi', $title, $html, $id);
 
     if ($stmt->execute()) {

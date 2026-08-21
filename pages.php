@@ -4,7 +4,7 @@ include('includes/database.php');
 include('includes/functions.php');
 // secure();
 
-$result = $connection->query("SELECT id, title, slug, status, updated_at FROM pages ORDER BY updated_at DESC");
+$result = $connect->query("SELECT id, title, slug, status, updated_at FROM pages ORDER BY updated_at DESC");
 
 include('includes/header.php');
 ?>
